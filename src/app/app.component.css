@@ -1,0 +1,20 @@
+ul {
+    padding: 2% 0 0 0;
+    background-color: white;
+}
+
+li {
+    border: 1px solid lightgrey;
+}
+
+li:hover{
+    background-color: lavender;
+}
+
+div {
+    background-color: white;
+    max-width: 75%;
+    height: 90%;
+    margin: 5% auto;
+    padding: 5% 10%;
+}
