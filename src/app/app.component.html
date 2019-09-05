@@ -1,8 +1,10 @@
+
 <ul class="nav nav-tabs nav-fill">
     <li class="nav-item" [class.active]="viewMode == 'email'"><a class="nav-link"  (click)="viewMode = 'email'">Two way binding & pipes</a></li>
     <li class="nav-item" [class.active]="viewMode == 'authors'"><a class="nav-link" (click)="viewMode = 'authors'">Directives & services</a></li>
     <li class="nav-item" [class.active]="viewMode == 'pipes'"><a class="nav-link" (click)="viewMode = 'pipes'">More pipes & property binding</a></li>
     <li class="nav-item" [class.active]="viewMode == 'like'"><a class="nav-link" (click)="viewMode = 'like'">Passing data w/ inputs & outputs</a></li>
+    <li class="nav-item" [class.active]="viewMode == 'posts'"><a class="nav-link" (click)="viewMode = 'posts'">Consuming HTTP services</a></li>
 </ul>
 
 <div [ngSwitch]="viewMode">
@@ -17,5 +19,7 @@
     [likesCount]="tweet.likesCount"
     [isLiked]="tweet.isLiked">
 </like>
+
+<app-posts *ngSwitchCase="'posts'"></app-posts>
 
 </div>
