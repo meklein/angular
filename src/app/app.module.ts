@@ -15,10 +15,10 @@ import { FavoriteStarComponent } from './favorite-star/favorite-star.component';
 import { LikeComponent } from './like/like.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostService } from './services/post.service';
-import { RoutingModule } from './routing/routing.module';
-import { HomeComponent } from './home/home.component';
+import { StorageComponent } from './firebase/storage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './navigation/header/header.component';
+import { ZippyComponent } from './author-list/zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,9 @@ import { HeaderComponent } from './navigation/header/header.component';
     FavoriteStarComponent,
     LikeComponent,
     PostsComponent,
-    HomeComponent,
-    HeaderComponent
+    StorageComponent,
+    HeaderComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,6 @@ import { HeaderComponent } from './navigation/header/header.component';
     FormsModule,
     FontAwesomeModule,
     HttpClientModule,
-    RoutingModule,
     BrowserAnimationsModule
   ],
   providers: [ AuthorsService,
